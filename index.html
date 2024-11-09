@@ -4,81 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutri Lari</title>
+    <title>Nutri Cris</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <main>
-        <header>
-            <h1>Nutri Lari</h1>
-            <h2 id="efeito">Sua saúde vem antes de tudo</h2>
-        </header>
+        <div class="fade-in">
+            <header>
+                <h1>Cristian Nutricionista</h1>
+                <h2>Sua saúde vem antes de tudo</h2>
+                <a href="#imagem"></a>
+            </header>
 
-        <div class="container">
-            <div class="texto">
 
-                <div class="leco">
-                    <h2 id="h2">Você já ouviu falar do IMC?</h2>
-                    <h3>Entenda agora</h3>
-                </div>
-
-                <div class="entenda">
-                    <h4>O que é o IMC?</h4>
-                    <p id="p">O IMC, ou Índice de Massa Corporal, é uma medida utilizada para avaliar se uma pessoa está com um
-                        peso
-                        adequado
-                        em relação à sua altura. Ele é calculado pela fórmula:</p>
-                </div>
-            </div>
-
-            <div class="lista">
+            <div class="card">
+                <h2>Você já ouviu falar do IMC?</h2>
+                <h3>Entenda agora</h3>
+                <p>O IMC, ou Índice de Massa Corporal, é uma medida utilizada para avaliar se uma pessoa está com um
+                    peso
+                    adequado
+                    em relação à sua altura. Ele é calculado pela fórmula:</p>
                 <nav>
-                    <ul>
-                        <li>Abaixo do Peso: IMC menor que 18,5</li>
-                    </ul>
-                    <ul>
-                        <li>Peso normal: IMC entre 18,5 e 24,9</li>
-                    </ul>
-                    <ul>
-                        <li>Sobrepeso: IMC entre 25 e 29,9</li>
-                    </ul>
-                    <ul>
-                        <li>Sobrepeso: IMC entre 25 e 29,9</li>
-                    </ul>
-                    <ul>
-                        <li>Obesidade: IMC 30 ou maior</li>
-                    </ul>
+                    <strong>
+                        <ul>
+                            <li>Abaixo do Peso: IMC menor que 18,5</li>
+                        </ul>
+                        <ul>
+                            <li>Peso normal: IMC entre 18,5 e 24,9</li>
+                        </ul>
+                        <ul>
+                            <li>Sobrepeso: IMC entre 25 e 29,9</li>
+                        </ul>
+                        <ul>
+                            <li>Sobrepeso: IMC entre 25 e 29,9</li>
+                        </ul>
+                        <ul>
+                            <li>Obesidade: IMC 30 ou maior</li>
+                        </ul>
+                    </strong>
                 </nav>
             </div>
 
-            <div class="caixas">
+            <div class="calculadora">
+                <h2>Calcule seu IMC aqui</h2>
                 <label for="altura">Altura:</label>
                 <input type="number" name="altura" id="altura">
 
                 <label for="peso">Peso:</label>
                 <input type="number" name="peso" id="peso">
 
-                <button onclick="calculo()"> Calcular IMC </button>
+                <button onclick="calculo()" id="button"> Calcular IMC </button>
 
                 <p>Seu indice de massa corporal é: <span id="resultado"></span></p>
             </div>
 
-            <script>
-                function calculo() {
-                    const altura = document.getElementById("altura").value;
-                    const peso = document.getElementById("peso").value;
-                    const resultado = peso / (altura ** 2);
-
-                    document.getElementById("resultado").textContent = resultado.toFixed(2);
-                }
-            </script>
-        </div>
-
     </main>
-    <!-- <footer>&copy; todos direitos reservados | 2024</footer> -->
-
+    <footer><strong>&copy; todos direitos reservados | 2024</strong></footer>
 
 </body>
 
